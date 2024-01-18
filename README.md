@@ -1,0 +1,2 @@
+# varargs
+ Iterate over everything.
