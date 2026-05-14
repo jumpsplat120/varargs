@@ -1,6 +1,7 @@
----Iterate over any and all parameters, including nil.
+---Iterate over all values passed in. Useful for when you want to iterate over
+---`...` and not exclude `nil`, which happens when doing `ipairs({ ... })`.
 ---@param ... any
----@return fun()
+---@return fun(): #The iterator function. To be used in `for ... do`
 return function(...)
     local args, count
     
